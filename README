@@ -1,0 +1,8 @@
+*** TASKS ***
+
+- take arguments from command line
+-- first member of the team implements object_id, share_count, likes_count FROM FB API about articles in arguments
+-- second member of the team parse base domain from URL and find id of domain, and likes count from FB API
+
+- both of the team members will publish their results on github
+- UPDATE THIS LINE WITH SOME CRAP
