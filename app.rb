@@ -31,9 +31,15 @@ ARGV.each { |url|
     FACEBOOK_API_URL, "method/links.getStats?urls=#{url}&format=json")
   response_url = response_url.first if response_url.kind_of?(Array)
 
-  # TASK 1
-
   # TASK 2
+  otpt << {
+    'host'                      => base_domain,
+    'url'                       => url,
+    'Facebook ID'               => response_domain['id']       || UNKNOWN,
+    'Počet likes stránky na FB' => response_domain['likes']    || UNKNOWN,
+    'Počet likes článku'        => response_url['like_count']  || UNKNOWN,
+    'Počet sdílení článku'      => response_url['share_count'] || UNKNOWN,
+  }
 
 }
 
