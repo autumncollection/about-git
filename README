@@ -1,8 +1,33 @@
 *** TASKS ***
 
-- take arguments from command line
--- first member of the team implements object_id, share_count, likes_count FROM FB API about articles in arguments
--- second member of the team parse base domain from URL and find id of domain, and likes count from FB API
+/#1/
+- finish implementation of downloading data from FB API
+- finish output
+/#2/
+-- unknown URL or base domain returns "neznámý"
 
-- both of the team members will publish their results on github
-- UPDATE THIS LINE WITH SOME CRAP
+# OUTPUT
+
+[{
+  'host'              => 'WEB base domain',
+  'url'               => 'URL from command line',
+  'Facebook ID'       => 'Facebook ID of Web page (response_domain)',
+  'Počet likes stránky na FB' => 'host likes count (response_domain)',
+  'Počet likes článku'    => 'url likes count (response_url)',
+  'Počet sdílení článku'  => 'url shares count (response_url)'
+}, {.......}, {.......}]
+
+- make commit
+- merge with origin/master!
+
+*** RUN ***
+ruby ./app.rb '_URL_' '_URL_' ... '_URL_'
+
+*** EXAMPLE ***
+ruby ./app.rb 'http://revue.idnes.cz/katerina-zemanova-na-udajne-porno-party-f03-/lidicky.aspx?c=A131008_133331_lidicky_zar' 'http://www.lidovky.cz/zit-brno-to-je-omezena-zalezitost-aby-rozhodla-o-onderkove-porazce-1fp-/zpravy-domov.aspx'
+
+**** EXTRA TASK ****
+
+/#3/
+-- try to finish implementation of recognizing of BAD url. Add error code
+--- straight to output variable without sending request to FB API!
