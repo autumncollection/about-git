@@ -32,8 +32,20 @@ ARGV.each { |url|
   response_url = response_url.first if response_url.kind_of?(Array)
 
   # TASK 1
+  # TASK 1
+  # TASK 1
+  # TASK 1
+  # TASK 1
+  # TASK 1
 
   # TASK 2
+  # TASK 2
+  # TASK 2
+  # TASK 2
+  # TASK 2
+  # TASK 2
+  # TASK 2
+
 
 }
 
