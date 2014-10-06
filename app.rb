@@ -33,8 +33,8 @@ ARGV.each { |url|
 
   # TASK 1 + 2 HERE
   otpt << {
-    'host'                      => 'WEB base domain',
-    'url'                       => 'URL from command line',
+    'host'                      => base_domain,
+    'url'                       => url,
     'Facebook ID'               => response_domain['id'],
     'Počet likes stránky na FB' => response_domain['likes'],
     'Počet likes článku'        => 'url likes count (response_url)',
