@@ -35,10 +35,10 @@ ARGV.each { |url|
   otpt << {
     'host'                      => base_domain,
     'url'                       => url,
-    'Facebook ID'               => response_domain['id'],
-    'Počet likes stránky na FB' => response_domain['likes'],
-    'Počet likes článku'        => response_url['like_count'],
-    'Počet sdílení článku'      => response_url['share_count']
+    'Facebook ID'               => response_domain['id']      || UNKNOWN,
+    'Počet likes stránky na FB' => response_domain['likes']   || UNKNOWN,
+    'Počet likes článku'        => response_url['like_count'] || UNKNOWN,
+    'Počet sdílení článku'      => response_url['share_count' || UNKNOWN
   }
 
 }
