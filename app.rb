@@ -31,7 +31,7 @@ ARGV.each { |url|
     FACEBOOK_API_URL, "method/links.getStats?urls=#{url}&format=json")
   response_url = response_url.first if response_url.kind_of?(Array)
 
-  # TASK 2
+  # TASK 1 + 2 HERE
   otpt << {
     'host'                      => base_domain,
     'url'                       => url,
