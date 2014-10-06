@@ -37,8 +37,8 @@ ARGV.each { |url|
     'url'                       => url,
     'Facebook ID'               => response_domain['id'],
     'Počet likes stránky na FB' => response_domain['likes'],
-    'Počet likes článku'        => 'url likes count (response_url)',
-    'Počet sdílení článku'      => 'url shares count (response_url)'
+    'Počet likes článku'        => response_url['like_count'],
+    'Počet sdílení článku'      => response_url['share_count']
   }
 
 }
